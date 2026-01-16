@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    restart: always
+    ports:
+      - "3000:3000"
+      - "2525:2525"
+    environment:
+      - PORT=3000
+      - SMTP_PORT=2525
+      - SMTP_DOMAIN=localhost
+      - HOST=0.0.0.0
+      - DB_PATH=/data/emails.db
+    volumes:
+      - start_data:/data
+
+volumes:
+  start_data:

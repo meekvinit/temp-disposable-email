@@ -1,0 +1,102 @@
+[debug] [2026-01-15T10:27:52.263Z] ----------------------------------------------------------------------
+[debug] [2026-01-15T10:27:52.266Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\VINITSAHU\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project vinit-b5708
+[debug] [2026-01-15T10:27:52.267Z] CLI Version:   15.3.0
+[debug] [2026-01-15T10:27:52.267Z] Platform:      win32
+[debug] [2026-01-15T10:27:52.267Z] Node Version:  v22.19.0
+[debug] [2026-01-15T10:27:52.267Z] Time:          Thu Jan 15 2026 15:57:52 GMT+0530 (India Standard Time)
+[debug] [2026-01-15T10:27:52.267Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-15T10:27:54.974Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-15T10:27:54.974Z] > authorizing via signed-in user (vinitsahu57@gmail.com)
+[debug] [2026-01-15T10:27:54.975Z] [iam] checking project vinit-b5708 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-01-15T10:27:54.976Z] Checked if tokens are valid: true, expires at: 1768476228712
+[debug] [2026-01-15T10:27:54.976Z] Checked if tokens are valid: true, expires at: 1768476228712
+[debug] [2026-01-15T10:27:54.978Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinit-b5708:testIamPermissions [none]
+[debug] [2026-01-15T10:27:54.978Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinit-b5708:testIamPermissions x-goog-quota-user=projects/vinit-b5708
+[debug] [2026-01-15T10:27:54.978Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinit-b5708:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-15T10:27:55.709Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinit-b5708:testIamPermissions 200
+[debug] [2026-01-15T10:27:55.709Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinit-b5708:testIamPermissions {}
+[debug] [2026-01-15T10:27:55.710Z] [iam] error while checking permissions, command may fail: Authorization failed. This account is missing the following required permissions on project vinit-b5708:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2026-01-15T10:27:55.712Z] Checked if tokens are valid: true, expires at: 1768476228712
+[debug] [2026-01-15T10:27:55.712Z] Checked if tokens are valid: true, expires at: 1768476228712
+[debug] [2026-01-15T10:27:55.713Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vinit-b5708 [none]
+[debug] [2026-01-15T10:27:56.397Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vinit-b5708 403
+[debug] [2026-01-15T10:27:56.397Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vinit-b5708 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2026-01-15T10:27:56.398Z] Request to https://firebase.googleapis.com/v1beta1/projects/vinit-b5708 had HTTP Error: 403, The caller does not have permission
+[debug] [2026-01-15T10:27:56.709Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/vinit-b5708 had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\VINITSAHU\node_modules\firebase-tools\lib\responseToError.js:53:12)
+    at RetryOperation._fn (C:\Users\VINITSAHU\node_modules\firebase-tools\lib\apiv2.js:320:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project vinit-b5708. Please make sure the project exists and your account has permission to access it.
+[debug] [2026-01-15T10:28:16.399Z] ----------------------------------------------------------------------
+[debug] [2026-01-15T10:28:16.405Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\VINITSAHU\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2026-01-15T10:28:16.407Z] CLI Version:   15.3.0
+[debug] [2026-01-15T10:28:16.407Z] Platform:      win32
+[debug] [2026-01-15T10:28:16.407Z] Node Version:  v22.19.0
+[debug] [2026-01-15T10:28:16.408Z] Time:          Thu Jan 15 2026 15:58:16 GMT+0530 (India Standard Time)
+[debug] [2026-01-15T10:28:16.408Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-15T10:28:18.959Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-15T10:28:18.960Z] > authorizing via signed-in user (vinitsahu57@gmail.com)
+[debug] [2026-01-15T10:28:18.960Z] [iam] checking project vinit-b5708 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-01-15T10:28:18.961Z] Checked if tokens are valid: true, expires at: 1768476228712
+[debug] [2026-01-15T10:28:18.962Z] Checked if tokens are valid: true, expires at: 1768476228712
+[debug] [2026-01-15T10:28:18.963Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinit-b5708:testIamPermissions [none]
+[debug] [2026-01-15T10:28:18.963Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinit-b5708:testIamPermissions x-goog-quota-user=projects/vinit-b5708
+[debug] [2026-01-15T10:28:18.963Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinit-b5708:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-15T10:28:20.801Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinit-b5708:testIamPermissions 200
+[debug] [2026-01-15T10:28:20.801Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinit-b5708:testIamPermissions {}
+[debug] [2026-01-15T10:28:20.801Z] [iam] error while checking permissions, command may fail: Authorization failed. This account is missing the following required permissions on project vinit-b5708:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2026-01-15T10:28:20.802Z] Checked if tokens are valid: true, expires at: 1768476228712
+[debug] [2026-01-15T10:28:20.802Z] Checked if tokens are valid: true, expires at: 1768476228712
+[debug] [2026-01-15T10:28:20.803Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vinit-b5708 [none]
+[debug] [2026-01-15T10:28:21.519Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vinit-b5708 403
+[debug] [2026-01-15T10:28:21.519Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vinit-b5708 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2026-01-15T10:28:21.520Z] Request to https://firebase.googleapis.com/v1beta1/projects/vinit-b5708 had HTTP Error: 403, The caller does not have permission
+[debug] [2026-01-15T10:28:21.955Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/vinit-b5708 had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\VINITSAHU\node_modules\firebase-tools\lib\responseToError.js:53:12)
+    at RetryOperation._fn (C:\Users\VINITSAHU\node_modules\firebase-tools\lib\apiv2.js:320:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project vinit-b5708. Please make sure the project exists and your account has permission to access it.
+[debug] [2026-01-15T10:28:38.455Z] ----------------------------------------------------------------------
+[debug] [2026-01-15T10:28:38.458Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\VINITSAHU\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --debug
+[debug] [2026-01-15T10:28:38.458Z] CLI Version:   15.3.0
+[debug] [2026-01-15T10:28:38.458Z] Platform:      win32
+[debug] [2026-01-15T10:28:38.458Z] Node Version:  v22.19.0
+[debug] [2026-01-15T10:28:38.458Z] Time:          Thu Jan 15 2026 15:58:38 GMT+0530 (India Standard Time)
+[debug] [2026-01-15T10:28:38.458Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-15T10:28:40.148Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-15T10:28:40.149Z] > authorizing via signed-in user (vinitsahu57@gmail.com)
+[debug] [2026-01-15T10:28:40.150Z] [iam] checking project vinit-b5708 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-01-15T10:28:40.151Z] Checked if tokens are valid: true, expires at: 1768476228712
+[debug] [2026-01-15T10:28:40.151Z] Checked if tokens are valid: true, expires at: 1768476228712
+[debug] [2026-01-15T10:28:40.152Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinit-b5708:testIamPermissions [none]
+[debug] [2026-01-15T10:28:40.152Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinit-b5708:testIamPermissions x-goog-quota-user=projects/vinit-b5708
+[debug] [2026-01-15T10:28:40.153Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinit-b5708:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-15T10:28:41.964Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinit-b5708:testIamPermissions 200
+[debug] [2026-01-15T10:28:41.966Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinit-b5708:testIamPermissions {}
+[debug] [2026-01-15T10:28:41.967Z] [iam] error while checking permissions, command may fail: Authorization failed. This account is missing the following required permissions on project vinit-b5708:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2026-01-15T10:28:41.968Z] Checked if tokens are valid: true, expires at: 1768476228712
+[debug] [2026-01-15T10:28:41.969Z] Checked if tokens are valid: true, expires at: 1768476228712
+[debug] [2026-01-15T10:28:41.970Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vinit-b5708 [none]
+[debug] [2026-01-15T10:28:42.587Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vinit-b5708 403
+[debug] [2026-01-15T10:28:42.588Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vinit-b5708 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2026-01-15T10:28:42.592Z] Request to https://firebase.googleapis.com/v1beta1/projects/vinit-b5708 had HTTP Error: 403, The caller does not have permission
+[debug] [2026-01-15T10:28:42.989Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/vinit-b5708 had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\VINITSAHU\node_modules\firebase-tools\lib\responseToError.js:53:12)
+    at RetryOperation._fn (C:\Users\VINITSAHU\node_modules\firebase-tools\lib\apiv2.js:320:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project vinit-b5708. Please make sure the project exists and your account has permission to access it.
